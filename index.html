@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kółko i krzyżyk</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="menu">
+        <div id="auto">
+            <div class="ribbon">
+                <div class="ribbon-stitches-top"></div><strong class="ribbon-content"><h1>Kółko i krzyżyk</h1></strong>
+                <div class="ribbon-stitches-bottom"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="h2">
+                <h2>Poziom trudnosci</h2>
+            </div>
+            <form class="form cf difficulty">
+                <section class="plan cf">
+                    <input type="radio" name="radio1" id="easy" value="easy"><label class="easy-label four col  dd" for="easy">Łatwy</label>
+                    <input type="radio" name="radio1" id="hard" value="hard" checked><label class="hard-label four col dd" for="hard">Trudny</label>
+                    <input type="radio" name="radio1" id="impossible" value="impossible"><label class="impossible-label four col dd" for="impossible">Niemożliwy</label>
+                </section>
+                <section class="payment-plan cf plan players">
+                    <div class="h3">
+                        <h2>Ilosc graczy</h2>
+                    </div>
+                    <input type="radio" name="radio2" id="one" value="one" checked><label class="one-label four col" for="one">Jeden</label>
+                    <input type="radio" name="radio2" id="two" value="two"><label class="two-label four col" for="two">Dwoje</label>
+                </section>
+            </form>
+            <button class="submit StartGame" id="StartGame">Start		</button>
+
+        </div>
+    </div>
+    <div id="winGame">
+        <div id="whoWin">
+        </div>
+        <div id="win">
+            <spam id="wheel" class="win">0 </spam>
+            <spam id="Cross" class="win">0</spam>
+        </div>
+        <div id="button">
+            <button id="goMenu" class='btn'>Wróć do menu</button>
+            <button id="nextGame" class='btn'>Następna gra</button>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/game.js"></script>
+<script src="js/one_players.js"></script>
+<script src="js/two_players.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/field.js"></script>
+</html>
